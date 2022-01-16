@@ -1,0 +1,10 @@
+This bot is a productivity bot for utilizing the Pomodoro technique in Discord. Before starting the bot read this first.
+
+IMPORTANT!!!!
+  BEFORE STARTING THE BOT: Open .env and change the parameters to your server name, your user ID, etc.
+
+The basic commands for this bot are:
+  !study
+  !studytime
+  !break
+  !breaktime
