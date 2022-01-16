@@ -9,7 +9,7 @@ starttime = datetime.datetime.now()
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
-RUDRESH = os.getenv('RUDRESH_ID')
+USER = os.getenv('USER_ID')
 
 client = discord.Client()
 
@@ -24,7 +24,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     print(f'Name: {message.author.name}, ID: {message.author.id}')
-    if str(message.author.id) == RUDRESH:
+    if str(message.author.id) == USER:
         if "!study" == message.content:
             timelength = 0
             await message.channel.send('Now, please input a time using !studytime (int):')
